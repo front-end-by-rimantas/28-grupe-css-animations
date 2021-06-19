@@ -6,4 +6,35 @@ body {
   width: 100px;
   height: 100px;
   background-color: yellow;
+  animation-name: kvadratu;
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(0.16, 1.42, 0.68, -0.39);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.square:hover {
+  animation-play-state: paused;
+}
+
+@keyframes kvadratu {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  25% {
+    margin-top: 0;
+    margin-left: 300px;
+  }
+  50% {
+    margin-top: 300px;
+    margin-left: 300px;
+  }
+  75% {
+    margin-top: 300px;
+    margin-left: 0;
+  }
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
